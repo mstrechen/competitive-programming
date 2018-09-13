@@ -1,0 +1,18 @@
+
+BEGIN
+{
+	assign(input,'output.txt');
+	assign(output,'output.txt');
+	reset(input);
+	rewrite(output);}
+	readln(s1);
+	readln(s2);
+	readln(s3);
+	readln(s4);
+	swapIf(s2,s3);
+	swapIf(s3,s4);
+	swapIf(s2,s3);
+	writeln(s1,': ',s2,', ',s3,', ',s4)
+	{close(input);
+	close(output);}
+END.

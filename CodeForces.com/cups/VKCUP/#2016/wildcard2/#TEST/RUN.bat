@@ -1,0 +1,1 @@
+run-crossrun.bat 01 "..\_currentmain\currentmain.exe"

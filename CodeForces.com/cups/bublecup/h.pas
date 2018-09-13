@@ -1,0 +1,21 @@
+uses crt;
+var a:array[0..1000] of longint;
+	  i:longint;
+    c:char;
+function rec(red,blue,n:longint):longint;
+	begin
+		Inc(a[blue+red]);
+		if(red=n) or (blue=n) then
+			begin
+				rec:=(2*n-red-blue+1) mod 1000000007;
+				for i:=blue+red+1 to 2*n do inc(a[i]);
+			end
+		else rec:=(rec(red,blue+1,n)+rec(red+1,blue,n)+1) mod 1000000007;
+	end;
+var n:longint;
+BEGIN
+read(n);
+writeln(rec(0,0,n));
+for i:=0 to 2*n do write(a[i],' ');
+c:=readkey();
+END.

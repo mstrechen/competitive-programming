@@ -1,0 +1,36 @@
+#include<iostream>
+
+using namespace std;
+
+bool check(vector<pair<int, int> > & a, const string & instruction){
+    int x = 0, y = 0;
+    for(int i = 0; i < a.size(); i++)
+        for(int j = 0; j < a[i].size(); j++)
+            if(a[i][j] == 'S')
+                x = i, y = j;
+
+}
+
+int main(){
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+
+    int n, m;
+    cin >> n >> m;
+    vector<string> a(n + 2);
+    string instruction;
+
+    for(int i = 1; i <= n; i++){
+        cin >> a[i];
+        a[i] = '#' + a[i] + '#';
+    }
+    a[0] = string(m + 2, '#');
+    a[n+1] = string(m + 2, '#');
+
+    cin >> instruction;
+    int ans = 0;
+    ans =
+
+
+    return 0;
+}

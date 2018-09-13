@@ -1,0 +1,17 @@
+var a,x,y,i1,i,n1,k1,   d,k:longint;
+function joseph(n,k:longint):longint;
+begin
+    if n=1 then joseph:=1
+    else joseph:=((joseph(n-1,k)+k-1) mod n) + 1;
+end;
+begin
+assign(input,'input.txt');
+reset(input);
+             read(n1,k1);
+
+close(input);
+assign(output,'output.txt');
+rewrite(output);
+write(joseph(n1,k1));
+
+end.
