@@ -17,7 +17,7 @@ Resourse | Resourse
 [HackerRank][7] |[COCI][8]
 [Informatics][9]|[NetOI][10]
 [QBit][11]      |[Russian Code Cup][12]
-[UVa][13]       |[Yandes.Contest][14]
+[UVa][13]       |[Yandex.Contest][14]
 
 
   [1]: http://acm.timus.ru/ "Timus"
